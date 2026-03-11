@@ -1,73 +1,207 @@
-# Welcome to your Lovable project
+# Portfolio Website
 
-## Project info
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Features smooth animations, dark mode support, and a clean, professional design.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## ✨ Features
 
-## How can I edit this code?
+- **Responsive Design** - Fully responsive layout that works on all devices
+- **Dark/Light Mode** - Theme toggle with persistent preferences
+- **Smooth Animations** - Framer Motion animations for engaging user experience
+- **Interactive Sections**:
+  - Hero section with social links and profile photo
+  - About section with personal details
+  - Projects showcase with GitHub and Live Demo links
+  - Skills categorized by domain with technology icons
+  - Education timeline
+  - Professional certifications
+  - Contact form with EmailJS integration
+- **Modern UI Components** - Built with shadcn/ui and Radix UI
+- **SEO Optimized** - Meta tags for better search engine visibility
 
-There are several ways of editing your application.
+## 🚀 Technologies Used
 
-**Use Lovable**
+### Frontend
+- **React 18.3** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Utility-first styling
+- **Framer Motion** - Animation library
+- **React Router** - Client-side routing
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### UI Components
+- **shadcn/ui** - Accessible component library
+- **Radix UI** - Headless UI primitives
+- **Lucide React** - Icon library
+- **React Icons** - Technology logos
 
-Changes made via Lovable will be committed automatically to this repo.
+### Additional Libraries
+- **EmailJS** - Contact form email service
+- **next-themes** - Dark mode support
+- **class-variance-authority** - Component variants
+- **tailwind-merge** - Utility class merging
 
-**Use your preferred IDE**
+## 📦 Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
+- Node.js 18+ or Bun runtime
+- npm or bun package manager
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Setup
 
-Follow these steps:
+```bash
+# Clone the repository
+git clone https://github.com/Omjaiswal241/Portfolio.git
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Navigate to project directory
+cd Portfolio
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Install dependencies (using bun)
+bun install
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Or using npm
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
+bun run dev
+
+# Or using npm
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🛠️ Available Scripts
 
-**Use GitHub Codespaces**
+```bash
+# Development
+bun run dev          # Start development server
+npm run dev
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Build
+bun run build        # Production build
+npm run build
 
-## What technologies are used for this project?
+# Preview
+bun run preview      # Preview production build
+npm run preview
 
-This project is built with:
+# Testing
+bun run test         # Run tests
+npm run test
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Linting
+bun run lint         # Run ESLint
+npm run lint
+```
 
-## How can I deploy this project?
+## 📁 Project Structure
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+```
+Portfolio/
+├── public/                  # Static assets
+│   ├── profile.jpeg        # Profile photo
+│   ├── palo-alto-certificate.pdf
+│   └── robots.txt
+├── src/
+│   ├── components/         # React components
+│   │   ├── ui/            # shadcn/ui components
+│   │   ├── AboutSection.tsx
+│   │   ├── ContactSection.tsx
+│   │   ├── EducationSection.tsx
+│   │   ├── Footer.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── ProjectsSection.tsx
+│   │   ├── SkillsSection.tsx
+│   │   └── CertificationsSection.tsx
+│   ├── pages/             # Page components
+│   ├── hooks/             # Custom React hooks
+│   ├── lib/               # Utility functions
+│   ├── App.tsx            # Main app component
+│   ├── main.tsx           # Entry point
+│   └── index.css          # Global styles
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── tailwind.config.ts
+```
 
-## Can I connect a custom domain to my Lovable project?
+## 📧 EmailJS Configuration
 
-Yes, you can!
+To enable the contact form:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Create a free account at [EmailJS](https://www.emailjs.com/)
+2. Set up an email service (e.g., Gmail)
+3. Create an email template
+4. Update credentials in `src/components/ContactSection.tsx`:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```typescript
+await emailjs.sendForm(
+  "YOUR_SERVICE_ID",
+  "YOUR_TEMPLATE_ID",
+  formRef.current,
+  "YOUR_PUBLIC_KEY"
+);
+```
+
+## 🎨 Customization
+
+### Update Personal Information
+Edit the following files to customize content:
+- **Hero Section**: `src/components/HeroSection.tsx`
+- **About**: `src/components/AboutSection.tsx`
+- **Projects**: `src/components/ProjectsSection.tsx`
+- **Skills**: `src/components/SkillsSection.tsx`
+- **Education**: `src/components/EducationSection.tsx`
+- **Certifications**: `src/components/CertificationsSection.tsx`
+
+### Theme Colors
+Modify theme colors in `src/index.css` under the `:root` and `.dark` selectors.
+
+## 🌐 Deployment
+
+### Build for Production
+
+```bash
+bun run build
+# or
+npm run build
+```
+
+Build output will be in the `dist/` directory.
+
+### Deploy to Hosting Platforms
+
+**Vercel / Netlify:**
+```bash
+# Install CLI
+npm i -g vercel
+# or
+npm i -g netlify-cli
+
+# Deploy
+vercel
+# or
+netlify deploy --prod
+```
+
+**GitHub Pages:**
+1. Update `vite.config.ts` with base path
+2. Build and push to `gh-pages` branch
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 📞 Contact
+
+**Om Jaiswal**
+- Email: omjaiswal241@gmail.com
+- LinkedIn: [linkedin.com/in/omjaiswal/241](https://linkedin.com/in/omjaiswal/241)
+- GitHub: [github.com/Omjaiswal241](https://github.com/Omjaiswal241)
+- LeetCode: [leetcode.com/omjaiswal241](https://leetcode.com/omjaiswal241)
+- Twitter: [@omjaiswal241](https://x.com/omjaiswal241)
+
+---
+
+Made with ❤️ by Om Jaiswal

@@ -4,15 +4,15 @@ import { GraduationCap } from "lucide-react";
 const education = [
   {
     degree: "Bachelor of Technology",
-    institution: "University Name",
-    year: "2021 – 2025",
-    description: "Studying Computer Science & Engineering with focus on software development and algorithms.",
+    institution: "GL Bajaj Institute of Technology and Management",
+    year: "2023 – 2027",
+    description: "Computer Science Engineering | Current CGPA: 7.68/10",
   },
   {
-    degree: "Higher Secondary (XII)",
-    institution: "School Name",
-    year: "2019 – 2021",
-    description: "Completed higher secondary education with focus on Science and Mathematics.",
+    degree: "Intermediate (10+2)",
+    institution: "New Public College",
+    year: "2019 - 2022",
+    description: "12th Grade: 89.16% | 10th Grade: 91.16%",
   },
 ];
 

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Moon, Sun, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const navItems = ["Home", "About", "Projects", "Skills", "Education", "Contact"];
+const navItems = ["Home", "About", "Projects", "Skills", "Education", "Certifications", "Contact"];
 
 const Navbar = () => {
   const [dark, setDark] = useState(false);
@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-border ${
         scrolled ? "bg-background/80 backdrop-blur-lg shadow-sm" : "bg-transparent"
       }`}
     >
