@@ -56,7 +56,7 @@ const HeroSection = () => {
             className="flex justify-center md:justify-end"
           >
             <img
-              src="/profile.jpeg"
+              src={`${import.meta.env.BASE_URL}profile.jpeg`}
               alt="Om Jaiswal"
               className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-primary/20 shadow-2xl"
             />
