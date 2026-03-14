@@ -20,7 +20,7 @@ const certifications = [
   {
     title: "Network Security Fundamentals",
     issuer: "Palo Alto Networks Cybersecurity Academy",
-    link: "/palo-alto-certificate.pdf", // Add your certificate link here
+    link: "https://paloaltonetworksacademy.net/mod/customcert/verify_certificate.php?code=x3OJbNzFwA", // Add your certificate link here
   },
   {
     title: "Network Technician Career Path",
