@@ -3,6 +3,12 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    title: "TranscodeHub",
+    description: "I built TranscodeHub, a full-stack video transcoding and adaptive streaming platform that allows users to upload videos and stream them in multiple resolutions based on their internet speed. The platform uses Node.js and Express for the backend, React for the frontend, and FFmpeg running inside Docker containers to transcode videos into HLS format (.m3u8 and .ts segments). I implemented asynchronous video processing using Redis and BullMQ, user authentication using JWT, and real-time processing updates using Socket.io. The system is designed with a scalable architecture where uploaded videos are processed in background workers and then streamed to users using HLS.js for adaptive bitrate streaming. This project demonstrates my skills in full-stack development, system design, Docker, video processing, streaming protocols, and real-time communication.",
+    tags: ["Node.js", "Express.js", "React", "TypeScript", "MongoDB", "SQLite", "Redis", "BullMQ", "FFmpeg", "FFprobe", "Docker", "HLS.js", "Socket.io", "Tailwind CSS", "Vitest", "Playwright", "ESLint", "Sentry"],
+    github: "https://github.com/Omjaiswal241/TranscodeHub",
+  },
+  {
     title: "Cattle-Breed-Prediction-Model",
     description: "Developed an AI-based livestock breed classification system as part of the Smart India Hackathon (SIH) 2025 problem statement, capable of identifying 41 Indian cattle and buffalo breeds from images. The model was designed to handle variations in lighting conditions, backgrounds, and animal poses, achieving around 80–85% classification accuracy. Performance was further improved using transfer learning and optimized preprocessing, enabling fast and reliable real-time predictions.",
     tags: ["TensorFlow", "OpenCV", "CNN", "Transfer Learning", "Flask API", "React", "TypeScript"],
