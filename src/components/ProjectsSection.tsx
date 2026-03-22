@@ -4,8 +4,8 @@ import { Github, ExternalLink } from "lucide-react";
 const projects = [
   {
     title: "TranscodeHub",
-    description: "I built TranscodeHub, a full-stack video transcoding and adaptive streaming platform that allows users to upload videos and stream them in multiple resolutions based on their internet speed. The platform uses Node.js and Express for the backend, React for the frontend, and FFmpeg running inside Docker containers to transcode videos into HLS format (.m3u8 and .ts segments). I implemented asynchronous video processing using Redis and BullMQ, user authentication using JWT, and real-time processing updates using Socket.io. The system is designed with a scalable architecture where uploaded videos are processed in background workers and then streamed to users using HLS.js for adaptive bitrate streaming. This project demonstrates my skills in full-stack development, system design, Docker, video processing, streaming protocols, and real-time communication.",
-    tags: ["Node.js", "Express.js", "React", "TypeScript", "MongoDB", "SQLite", "Redis", "BullMQ", "FFmpeg", "FFprobe", "Docker", "HLS.js", "Socket.io", "Tailwind CSS", "Vitest", "Playwright", "ESLint", "Sentry"],
+    description: "Built a full-stack video transcoding and adaptive streaming platform that processes uploaded videos through an asynchronous transcoding pipeline, converting videos into HLS format and streaming them in multiple resolutions based on network speed. Implemented a job queue using Redis & BullMQ, containerized FFmpeg workers using Docker, real-time processing updates via Socket.io, and adaptive bitrate streaming using HLS.js. Designed a scalable architecture with background workers for distributed video processing.",
+    tags: ["Node.js", "Express.js", "React", "TypeScript", "MongoDB", "SQLite", "Redis", "BullMQ", "FFmpeg", "Docker", "HLS.js", "Socket.io", "Tailwind CSS", "Sentry"],
     github: "https://github.com/Omjaiswal241/TranscodeHub",
   },
   {
