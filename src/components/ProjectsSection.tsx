@@ -30,6 +30,12 @@ const projects = [
     liveDemo: "https://convoconnect-frontend.onrender.com",
   },
   {
+    title: "JARVIS",
+    description: "A voice-controlled virtual assistant that listens for a wake word and executes user commands such as opening websites, answering questions, and performing basic automation tasks. The assistant uses speech recognition for input, text-to-speech for responses, and integrates with the Gemini API to generate intelligent replies. It also includes error handling and a cooldown system to prevent repeated wake triggers.",
+    tags: ["Python", "Gemini API", "SpeechRecognition", "PyAudio", "pyttsx3"],
+    github: "https://github.com/Omjaiswal241/Jarvis",
+  },
+  {
     title: "Vibe-Stream",
     description: "A lightweight browser-based music player that allows users to play and manage songs directly from the local library. The application provides basic playback controls such as play, pause, and track selection, with songs organized into playlists for better navigation. Designed as a static frontend project, it demonstrates interactive UI development and client-side media handling in a simple and responsive interface.",
     tags: ["HTML", "CSS", "JavaScript"],
