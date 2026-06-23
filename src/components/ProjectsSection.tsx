@@ -9,6 +9,12 @@ const projects = [
     github: "https://github.com/Omjaiswal241/TranscodeHub",
   },
   {
+    title: "RAG PDF Chatbot",
+    description: "Developed a Retrieval-Augmented Generation (RAG) chatbot that enables users to query PDF documents using natural language. Implemented document chunking, vector embeddings, and semantic search with Qdrant to deliver context-aware responses powered by Gemini API. Built a Dockerized ingestion pipeline for efficient document indexing and retrieval.",
+    tags: ["Python", "LangChain", "Gemini API", "Qdrant", "RAG", "LLM", "Docker"],
+    github: "https://github.com/Omjaiswal241/RAG-PDF-Chatbot",
+  },
+  {
     title: "Cattle-Breed-Prediction-Model",
     description: "Developed an AI-based livestock breed classification system as part of the Smart India Hackathon (SIH) 2025 problem statement, capable of identifying 41 Indian cattle and buffalo breeds from images. The model was designed to handle variations in lighting conditions, backgrounds, and animal poses, achieving around 80–85% classification accuracy. Performance was further improved using transfer learning and optimized preprocessing, enabling fast and reliable real-time predictions.",
     tags: ["TensorFlow", "OpenCV", "CNN", "Transfer Learning", "Flask API", "React", "TypeScript"],

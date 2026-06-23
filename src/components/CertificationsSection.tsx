@@ -3,6 +3,11 @@ import { Award, ExternalLink } from "lucide-react";
 
 const certifications = [
   {
+    title: "Apply AI: Analyze Customer Reviews",
+    issuer: "Cisco Networking Academy",
+    link: "https://www.credly.com/badges/52b62cde-a531-4287-9d64-d3dd3159ecfb/public_url", // Add your certificate link here
+  },
+  {
     title: "AWS Academy Graduate – Cloud Foundations",
     issuer: "Amazon Web Services (AWS)",
     link: "https://www.credly.com/badges/eb03b349-7d12-438f-961c-fdaf610bcf04/public_url", // Add your certificate link here
@@ -23,9 +28,14 @@ const certifications = [
     link: "https://paloaltonetworksacademy.net/mod/customcert/verify_certificate.php?code=x3OJbNzFwA", // Add your certificate link here
   },
   {
-    title: "Network Technician Career Path",
+    title: "CCNA: Enterprise Networking, Security, and Automation",
     issuer: "Cisco Networking Academy",
-    link: "https://www.credly.com/badges/4b9f35d9-46a6-4e1e-b972-3c4b15ff60b4/public_url", // Add your certificate link here
+    link: "https://www.credly.com/badges/073101df-4518-4197-a8d5-f10320d817f7/public_url", // Add your certificate link here
+  },
+  {
+    title: "Python Essentials 2",
+    issuer: "Cisco Networking Academy",
+    link: "https://www.credly.com/badges/825d542a-9c5f-416e-a3bc-714c35ad0f99/public_url", // Add your certificate link here
   },
 ];
 

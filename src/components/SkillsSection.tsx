@@ -24,6 +24,15 @@ import {
 } from "react-icons/si";
 import { FaAws, FaJava } from "react-icons/fa";
 import { IconType } from "react-icons";
+import {
+  BrainCircuit,
+  Boxes,
+  Code2,
+  Database,
+  DatabaseZap,
+  Link2,
+  Workflow,
+} from "lucide-react";
 
 interface Skill {
   name: string;
@@ -63,10 +72,22 @@ const skillCategories: SkillCategory[] = [
       { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
       { name: "Express.js", icon: SiExpress, color: "#000000" },
       { name: "WebSockets", icon: SiSocketdotio, color: "#010101" },
+      { name: "Redis", icon: Database, color: "#DC382D" },
+      { name: "Qdrant DB", icon: DatabaseZap, color: "#FF6B6B" },
       { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
       { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
       { name: "MySQL", icon: SiMysql, color: "#4479A1" },
       { name: "Prisma ORM", icon: SiPrisma, color: "#2D3748" },
+    ],
+  },
+  {
+    title: "AI / GenAI",
+    skills: [
+      { name: "RAG", icon: BrainCircuit, color: "#7C3AED" },
+      { name: "MCP", icon: Boxes, color: "#0F766E" },
+      { name: "LLM APIs", icon: Code2, color: "#0EA5E9" },
+      { name: "LangChain", icon: Link2, color: "#F59E0B" },
+      { name: "Vector Embeddings", icon: Workflow, color: "#8B5CF6" },
     ],
   },
   {
